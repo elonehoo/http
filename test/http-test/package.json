@@ -1,0 +1,22 @@
+{
+  "name": "@elonehoo/http-test",
+  "private": "true",
+  "description": "axios request wrapper",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "type": "module",
+  "license": "MIT",
+  "version": "0.0.0",
+  "scripts": {
+    "prepare": "pnpm -r run stub",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
+    "typeCheck": "tsc --noEmit",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@elonehoo/http": "workspace:*",
+    "vitest":"^0.10.0"
+  }
+}
