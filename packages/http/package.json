@@ -13,6 +13,8 @@
     "test": "vitest"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "lodash-es": "^4.17.21",
+    "qs": "^6.10.3"
   }
 }
