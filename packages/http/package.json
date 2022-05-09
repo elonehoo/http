@@ -1,6 +1,6 @@
 {
   "name": "@elonehoo/http",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "main": "./src/index.ts",
   "description": "axios request wrapper",
@@ -19,7 +19,6 @@
     "@types/qs": "^6.9.7"
   },
   "devDependencies": {
-
     "axios": "^0.27.2"
   }
 }
