@@ -5,5 +5,4 @@ export * from './core/axiosTransform'
 export * from './enums/httpEnum'
 
 export * from './util/is'
-
-export * from './config/basic'
+export * from './util'

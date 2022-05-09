@@ -2,21 +2,15 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import { basicHttp } from '@elonehoo/http'
+import {basicHttp} from './http'
 
 basicHttp.request({
-    url:'https://api.apishop.net/common/air/getCityPM25Detail',
-    method:'POST',
-    headers:{
-      'Access-Control-Allow-Origin':'*',
-      'Content-Type':'text/plain; charset=utf-8',
-    },
-    data:{
-      apiKey: 'FF2EsRW263b44fea77620f637242b57efe1334cbe701e01',
-      city: '广州市'
-    }
+  url:'http://localhost:8080/demo3',
+  method:'GET',
 }).then(res =>{
-    console.log(res.data)
+  console.log(res)
+}).catch(error =>{
+  console.log(error)
 })
 </script>
 
