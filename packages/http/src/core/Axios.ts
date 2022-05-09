@@ -8,7 +8,7 @@ import type { RequestOptions, CreateAxiosOptions, Result, UploadFileParams } fro
 
 export * from './axiosTransform'
 
-export class VAxios {
+export class send {
   private axiosInstance: AxiosInstance;
   private options: CreateAxiosOptions;
 
