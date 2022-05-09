@@ -16,10 +16,9 @@ import {
 import axios,{AxiosResponse} from 'axios'
 
 export interface Result<T = any> {
-  code: number;
-  type?: 'success' | 'error' | 'warning';
-  message: string;
-  result?: T;
+  status: number;
+  statusText: string;
+  data?: T;
 }
 
 const transform: AxiosTransform = {
@@ -55,9 +54,9 @@ const transform: AxiosTransform = {
       throw new Error('error');
     }
     //  这里 code，result，message为 后台统一的字段，需要修改为项目自己的接口返回格式
-    const { code, result, message } = data;
+    const { status, statusText } = res;
     // 请求成功
-    const hasSuccess = data && Reflect.has(data, 'code') && code === ResultEnum.SUCCESS;
+    const hasSuccess = res && Reflect.has(res, 'status') && status === ResultEnum.SUCCESS;
     // 是否显示提示信息
     if (isShowMessage) {
       if (hasSuccess && (successMessageText || isShowSuccessMessage)) {
@@ -71,11 +70,11 @@ const transform: AxiosTransform = {
     }
 
     // 接口请求成功，直接返回结果
-    if (code === ResultEnum.SUCCESS) {
-      return result;
+    if (status === ResultEnum.SUCCESS) {
+      return res;
     }
     // 接口请求错误，统一提示错误信息 这里逻辑可以根据项目进行修改
-    let errorMsg = message;
+    let errorMsg = statusText;
 
     throw new Error(errorMsg);
   },
@@ -184,7 +183,7 @@ function createAxios(opt?: Partial<CreateAxiosOptions>) {
           // 是否返回原生响应头 比如：需要获取响应头时使用该属性
           isReturnNativeResponse: false,
           // 需要对返回数据进行处理
-          isTransformResponse: false,
+          isTransformResponse: true,
           // post请求的时候添加参数到url
           joinParamsToUrl: false,
           // 格式化提交参数时间
