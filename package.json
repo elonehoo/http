@@ -5,14 +5,14 @@
   "author": "Elone Hoo <huchengyea@163.com>",
   "type": "module",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "prepare": "pnpm -r run stub",
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public",
     "typeCheck": "tsc --noEmit",
     "test": "npm -C test/http-test run test",
     "coverage": "vitest run --coverage",
-    "vue:dev":"npm -C example/vue run dev",
+    "vue:dev": "npm -C example/vue run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
