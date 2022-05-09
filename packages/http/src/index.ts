@@ -6,3 +6,7 @@ export * from './enums/httpEnum'
 
 export * from './util/is'
 export * from './util'
+
+export * from './types/types'
+
+export * from './helper/helper'

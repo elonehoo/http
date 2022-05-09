@@ -7,7 +7,7 @@ export interface CreateAxiosOptions extends AxiosRequestConfig {
   authenticationScheme?: string;
 }
 
-type Recordable<T = any> = {
+export type Recordable<T = any> = {
   [x: string]: T;
 }
 

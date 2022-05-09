@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import {basicHttp} from './http'
 
 basicHttp.request({
-  url:'http://localhost:8080/demo3',
+  url:'http://localhost:8080/demo1',
   method:'GET',
 }).then(res =>{
   console.log(res)
