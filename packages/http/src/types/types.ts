@@ -1,7 +1,7 @@
 import { AxiosRequestConfig } from 'axios'
 import { AxiosTransform } from '../core/axiosTransform'
 
-export interface CreateAxiosOptions extends AxiosRequestConfig {
+export interface CreateAxiosOptionsType extends AxiosRequestConfig {
   transform?: AxiosTransform;
   requestOptions?: RequestOptions;
   authenticationScheme?: string;

@@ -4,15 +4,15 @@ import { isFunction } from '../util/is'
 import { AxiosCanceler } from './axiosCancel'
 import { ContentTypeEnum } from '../enums/httpEnum'
 import type { AxiosRequestConfig, AxiosInstance, AxiosResponse } from 'axios'
-import type { RequestOptions, CreateAxiosOptions, Result, UploadFileParams } from '../types/types'
+import type { RequestOptions, CreateAxiosOptionsType, Result, UploadFileParams } from '../types/types'
 
 export * from './axiosTransform'
 
 export class send {
   private axiosInstance: AxiosInstance;
-  private options: CreateAxiosOptions;
+  private options: CreateAxiosOptionsType;
 
-  constructor(options: CreateAxiosOptions) {
+  constructor(options: CreateAxiosOptionsType) {
     this.options = options;
     this.axiosInstance = axios.create(options);
     this.setupInterceptors();
@@ -25,7 +25,7 @@ export class send {
   /**
    * @description: 重新配置axios
    */
-  configAxios(config: CreateAxiosOptions) {
+  configAxios(config: CreateAxiosOptionsType) {
     if (!this.axiosInstance) {
       return;
     }
@@ -92,7 +92,7 @@ export class send {
   /**
    * @description:  创建axios实例
    */
-  private createAxios(config: CreateAxiosOptions): void {
+  private createAxios(config: CreateAxiosOptionsType): void {
     this.axiosInstance = axios.create(config);
   }
 
