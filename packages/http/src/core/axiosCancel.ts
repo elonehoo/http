@@ -1,4 +1,4 @@
-import qs from 'qs'
+import * as qs from 'qs'
 import { isFunction } from '../util/is'
 import axios, { AxiosRequestConfig, Canceler } from 'axios'
 
