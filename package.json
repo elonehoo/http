@@ -12,6 +12,7 @@
     "typeCheck": "tsc --noEmit",
     "test": "npm -C test/http-test run test",
     "coverage": "vitest run --coverage",
+    "vue:dev":"npm -C example/vue run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
