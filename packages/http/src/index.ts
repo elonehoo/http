@@ -1,3 +1,1 @@
-import {convertName} from '@titem/convert/src/index'
-
-export default convertName
+export const a =1
