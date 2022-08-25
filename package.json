@@ -18,13 +18,13 @@
   },
   "devDependencies": {
     "@elonehoo/http": "workspace:*",
-    "@elonehoo/eslint-config": "^2.0.0",
-    "bumpp": "^7.1.1",
-    "eslint": "^8.14.0",
-    "pnpm": "^7.0.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.5.4",
-    "unbuild": "^0.7.4",
-    "vite": "^2.9.5"
+    "@elonehoo/eslint-config": "2.0.0",
+    "bumpp": "7.2.0",
+    "eslint": "8.22.0",
+    "pnpm": "7.9.5",
+    "rimraf": "3.0.2",
+    "typescript": "4.7.4",
+    "unbuild": "0.7.6",
+    "vite": "2.9.15"
   }
 }
