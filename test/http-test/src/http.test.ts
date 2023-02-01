@@ -1,5 +1,5 @@
 import { test } from "vitest"
-import { basicHttp } from "@elonehoo/http"
+import { basicHttp } from "../http"
 
 test('test http',()=>{
   basicHttp.request({

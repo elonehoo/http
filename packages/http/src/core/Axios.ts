@@ -158,9 +158,8 @@ export class send {
 
     // 请求拦截器配置处理
     this.axiosInstance.interceptors.request.use((config: AxiosRequestConfig) => {
-      const {
-        headers: { ignoreCancelToken },
-      } = config;
+      //@ts-ignore
+      const { headers: { ignoreCancelToken }} = config;
       const ignoreCancel =
         ignoreCancelToken !== undefined
           ? ignoreCancelToken

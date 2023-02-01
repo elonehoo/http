@@ -7,18 +7,18 @@
   "author": "Elone Hoo <huchengyea@163.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist && unbuild",
-    "stub": "unbuild --stub",
+    "build": "rimraf dist && tsup",
     "prepublishOnly": "pnpm run build",
     "test": "vitest"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21",
-    "qs": "^6.11.0",
     "@types/lodash-es": "^4.17.6",
-    "@types/qs": "^6.9.7"
+    "@types/qs": "^6.9.7",
+    "lodash-es": "^4.17.21",
+    "qs": "^6.11.0"
   },
   "devDependencies": {
-    "axios": "1.2.2"
+    "axios": "1.2.2",
+    "tsup": "^6.5.0"
   }
 }
