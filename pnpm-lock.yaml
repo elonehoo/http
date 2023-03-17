@@ -25,7 +25,7 @@ importers:
   example/vue:
     specifiers:
       '@elonehoo/http': workspace:*
-      '@vitejs/plugin-vue': 3.2.0
+      '@vitejs/plugin-vue': 4.1.0
       axios: 1.2.2
       typescript: 4.9.4
       vite: 3.2.5
@@ -35,7 +35,7 @@ importers:
       vue: 3.2.45
     devDependencies:
       '@elonehoo/http': link:../../packages/http
-      '@vitejs/plugin-vue': 3.2.0_vite@3.2.5+vue@3.2.45
+      '@vitejs/plugin-vue': 4.1.0_vite@3.2.5+vue@3.2.45
       axios: 1.2.2
       typescript: 4.9.4
       vite: 3.2.5
@@ -675,11 +675,11 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-vue/3.2.0_vite@3.2.5+vue@3.2.45:
-    resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==}
+  /@vitejs/plugin-vue/4.1.0_vite@3.2.5+vue@3.2.45:
+    resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
-      vite: ^3.0.0
+      vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
       vite: 3.2.5
