@@ -18,7 +18,7 @@
   "devDependencies": {
     "@elonehoo/eslint-config": "2.0.0",
     "@elonehoo/http": "workspace:*",
-    "bumpp": "8.2.1",
+    "bumpp": "9.1.0",
     "eslint": "8.33.0",
     "pnpm": "7.26.3",
     "rimraf": "4.1.2",
