@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "axios": "1.2.2",
-    "tsup": "^6.5.0"
+    "tsup": "^7.1.0"
   },
   "peerDependencies": {
     "@types/lodash-es": "^4.17.6",
