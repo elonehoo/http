@@ -12,14 +12,14 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@types/lodash-es": "^4.17.6",
-    "@types/qs": "^6.9.7",
+    "@types/lodash-es": "^4.17.9",
+    "@types/qs": "^6.9.8",
     "lodash-es": "^4.17.21",
-    "qs": "^6.11.0"
+    "qs": "^6.11.2"
   },
   "devDependencies": {
-    "axios": "1.2.2",
-    "tsup": "^6.5.0"
+    "axios": "1.5.1",
+    "tsup": "^6.7.0"
   },
   "peerDependencies": {
     "@types/lodash-es": "^4.17.6",
